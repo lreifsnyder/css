@@ -1,0 +1,29 @@
+h1 {
+  color: red;
+  font-size: 70px;
+}
+
+p {
+  color: purple;
+  font-size: medium;
+}
+
+p a {
+  color:aquamarine;
+  text-decoration: none;
+  font-size: larger;
+}
+
+#boba {
+  color: palegoldenrod; 
+}
+
+.bright {
+  color: green;
+
+}
+
+body {
+  background-color: plum;
+  margin-left: 30px;
+}
