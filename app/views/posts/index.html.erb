@@ -1,6 +1,8 @@
 <div>
+    <div class="container text-center">
   <% for post in @posts %>
-    <div>
+      <div class="row">
+        <div class="col">
       <h4>
         <%# find user who created post %>
         <% user = User.find_by({ "id" => post["user_id"] }) %>
@@ -10,9 +12,13 @@
         <% else %>
           anonymous
         <% end %>
+                </div>
+        </div>
       </h4>
       <img src="<%= post["image"] %>">
       <p><%= post["body"] %></p>
+        <% end %>
+ 
     </div>
-  <% end %>
+
 </div>
